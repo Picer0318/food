@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0075FF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/food"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer1"
+        android:background="#FFFFFF">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer1"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0075FF">
+        <Button
+            android:id="@+id/food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/food"
+            android:textSize="18sp"
+            android:background="#0075FF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer2"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0075FF"
+        android:layout_toEndOf="@+id/footer1">
+        <ImageButton
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/record"
+            android:layout_centerInParent="true"
+            android:background="#0075FF"
+            android:contentDescription="@string/food"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer3"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0075FF"
+        android:layout_toEndOf="@+id/footer2">
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/add"
+            android:layout_centerInParent="true"
+            android:background="#0075FF"
+            android:contentDescription="@string/food"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer4"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0075FF"
+        android:layout_toEndOf="@+id/footer3">
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chat"
+            android:layout_centerInParent="true"
+            android:background="#0075FF"
+            android:contentDescription="@string/food"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer5"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0075FF"
+        android:layout_toEndOf="@+id/footer4">
+        <ImageButton
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/account"
+            android:layout_centerInParent="true"
+            android:background="#0075FF"
+            android:contentDescription="@string/food"/>
+    </RelativeLayout>
+
+</RelativeLayout>
