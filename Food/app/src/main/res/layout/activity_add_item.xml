@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/add"
+            android:text="@string/food"
             android:textSize="24sp" />
     </RelativeLayout>
 
@@ -22,53 +21,11 @@
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/footer1"
         android:layout_below="@id/header"
-        android:layout_marginTop="-1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_above="@id/footer1"
         android:background="#FFFFFF">
-        <Spinner
-            android:id="@+id/product_spr"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="50dp"
-            android:entries="@array/product_list"
-            android:spinnerMode="dropdown"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center">
-        </Spinner>
 
-        <Spinner
-            android:id="@+id/area_spr"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="120dp"
-            android:entries="@array/area_list"
-            android:spinnerMode="dropdown"
-            android:textAlignment="center">
-        </Spinner>
-
-        <EditText
-            android:id="@+id/Date"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="190dp"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
-            android:inputType="datetime"
-            android:autofillHints="@string/expiry_date"
-            android:text="@string/expiry_date"
-            android:labelFor="@id/Date"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="@string/submit"
-            android:layout_centerHorizontal="true"/>
     </RelativeLayout>
-
     <RelativeLayout
         android:id="@+id/footer1"
         android:layout_width="84dp"

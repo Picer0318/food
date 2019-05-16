@@ -5,4 +5,17 @@
     <string name="add">Add</string>
     <string name="chat">Chat</string>
     <string name="account">Account</string>
+    <string-array name="product_list">
+        <item>品名</item>
+        <item>飲料</item>
+        <item>海鮮</item>
+        <item>巧克力</item>
+    </string-array>
+    <string-array name="area_list">
+        <item>地區</item>
+        <item>台北市</item>
+        <item>新北市</item>
+    </string-array>
+    <string name="expiry_date">到期日</string>
+    <string name="submit">送出</string>
 </resources>
