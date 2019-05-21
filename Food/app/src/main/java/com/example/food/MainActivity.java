@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
     private Button mBnFood;
     private ImageButton mBtnRecord, mBtnAdd, mBtnChat, mBtnAccount;
+    private boolean logon = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,16 @@ public class MainActivity extends AppCompatActivity {
         mBtnChat =findViewById(R.id.chat);
         mBtnAccount =findViewById(R.id.account);
 
+        if(!logon){
+            Intent intent = new Intent(this,LoginActivity.class);
+            startActivity(intent);
+            logon  = true;
+        }
         //跳到food頁面
         mBnFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MainActivity.class);
+                Intent intent = new Intent(MainActivity.this,HomeActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
@@ -69,4 +74,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
-public class AccountActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     private Button mBnFood;
     private ImageButton mBtnRecord, mBtnAdd, mBtnChat, mBtnAccount;
@@ -15,7 +16,7 @@ public class AccountActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+        setContentView(R.layout.activity_home);
 
         mBnFood = findViewById(R.id.food);
         mBtnRecord =findViewById(R.id.record);
@@ -27,7 +28,7 @@ public class AccountActivity extends AppCompatActivity {
         mBnFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this,HomeActivity.class);
+                Intent intent = new Intent(HomeActivity.this,HomeActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
@@ -36,7 +37,7 @@ public class AccountActivity extends AppCompatActivity {
         mBtnRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this,RecordActivity.class);
+                Intent intent = new Intent(HomeActivity.this,RecordActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
@@ -45,16 +46,17 @@ public class AccountActivity extends AppCompatActivity {
         mBtnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this,AddActivity.class);
+                Intent intent = new Intent(HomeActivity.this,AddActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
             }
         });
         //跳到chat頁面
         mBtnChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this,ChatActivity.class);
+                Intent intent = new Intent(HomeActivity.this,ChatActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
@@ -63,7 +65,7 @@ public class AccountActivity extends AppCompatActivity {
         mBtnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountActivity.this,AccountActivity.class);
+                Intent intent = new Intent(HomeActivity.this,AccountActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }

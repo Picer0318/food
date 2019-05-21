@@ -27,7 +27,7 @@ public class ChatActivity extends AppCompatActivity {
         mBnFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChatActivity.this,MainActivity.class);
+                Intent intent = new Intent(ChatActivity.this,HomeActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
