@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="id">帳號</string>
+    <string name="passwd">密碼</string>
+    <string name="edt_userid">帳號</string>
+    <string name="edt_userpw">密碼</string>
+    <string name="btn_goRegiste">註冊</string>
+    <string name="btn_login">登入</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_registe">註冊</string>
+    <string name="tV_confirmuserpw">確認密碼</string>
+    <string name="edt_confirmuserpw">確認密碼</string>
+    <string name="chkBox_agree">我已同意使用條款</string>
+    <string name="tV_warn">使用條款:</string>
+    <string name="tV_warntext">使用條款：\n1. food n go只是提供一個分享食物的平台，並不會對食物安全做任何的負責
+        \n2. 前往約定面交地點務必注意安全
+    \n3. 若發現有惡意提供劣質食品之行為，food n go保有停止帳號活動之權力</string>
+    <string name="tV_Welcome">Welcome to food n go</string>
+    <string name="mainTop">main</string>
+    <string name="tV_mainTop">main</string>
+    <string name="imgbtn_main">main</string>
+    <string name="imgbtn_record">main</string>
+    <string name="imgbtn_add">main</string>
+    <string name="imgbtn_chat">main</string>
+    <string name="imgbtn_account">main</string>
+    <string name="imgLogo">food n go</string>
+    <string name="Imgview_uploadfood">上傳食物照片</string>
+    <string name="btn_takepic">開啟相機</string>
+    <string name="btn_openalbum">相簿匯入</string>
+    <string name="spn_foodlist">食物種類</string>
+    <string name="spn_arealist">所在地區</string>
+    <string name="expirydate">到期日</string>
+    <string name="pickuptime">領取時間</string>
+    <string name="foodname">食品名稱</string>
+    <string name="address">所在地址</string>
+    <string name="detail">詳情</string>
+    <string name="edt_detail">詳情</string>
+    <string name="btn_submit">送出</string>
+    <string-array name="foodlist">
+        <item>食物種類</item>
+        <item>飲料</item>
+        <item>餅乾</item>
+        <item>生食</item>
+        <item>熟食</item>
+    </string-array>
+
+    <string-array name="arealist">
+        <item>所在地區</item>
+        <item>台北市北投區</item>
+        <item>台北市士林區</item>
+        <item>台北市內湖區</item>
+        <item>台北市南港區</item>
+        <item>台北市中山區</item>
+        <item>台北市松山區</item>
+        <item>台北市信義區</item>
+        <item>台北市文山區</item>
+        <item>台北市大同區</item>
+        <item>台北市中正區</item>
+        <item>台北市大安區</item>
+        <item>台北市萬華區</item>
+    </string-array>
+
+
+</resources>

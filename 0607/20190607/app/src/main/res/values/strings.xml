@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">fng</string>
+    <string name="phone">手機號碼</string>
+    <string name="password">密碼</string>
+    <string name="login">登入</string>
+    <string name="register">註冊</string>
+    <string name="food_n_go">Food \'N\' go</string>
+    <string name="cancel">取消</string>
+    <string name="checkWarn">我已同意注意事項</string>
+    <string name="confirmpassword">確認密碼</string>
+    <string name="warning">注意事項</string>
+    <string name="Logo">Logo</string>
+    <string name="add">新增食物</string>
+    <string name="home">主頁</string>
+    <string name="logout">登出</string>
+    <string name="browse">瀏覽</string>
+    <string name="my">個人資料</string>
+    <string name="main">主頁</string>
+    <string name="btn_browse">btn_browse</string>
+    <string name="btn_my">btn_my</string>
+    <string name="btn_home">btn_home</string>
+    <string name="btn_message">btn_message</string>
+    <string name="btn_setting">btn_setting</string>
+    <string name="warn">使用條款:\n\n一.food\'n\'go僅用於分享食物等功能，請勿做其他非法用途   二.food\'n\'go只是提供一個食物分享的平台，不會對食物安全做任何負責   三.前往面交地點請小心自身安全   四.如有任何疑慮請聯絡客服</string>
+
+    <string-array name="area_list">
+        <item>地區</item>
+        <item>台北市</item>
+        <item>新北市</item>
+    </string-array>
+    <string-array name="product_list">
+        <item>品名</item>
+        <item>飲料</item>
+        <item>餅乾</item>
+        <item>生食</item>
+        <item>熟食</item>
+    </string-array>
+
+</resources>
