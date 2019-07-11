@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="5"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtn_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1AB993"
+                android:contentDescription="@string/imgbtn_main"
+                app:srcCompat="@drawable/fork" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtn_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/imgbtn_record"
+                app:srcCompat="@drawable/record" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtn_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1AB993"
+                android:contentDescription="@string/imgbtn_add"
+                app:srcCompat="@drawable/add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtn_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1AB993"
+                android:contentDescription="@string/imgbtn_chat"
+                app:srcCompat="@drawable/chat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtn_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1AB993"
+                android:contentDescription="@string/imgbtn_account"
+                app:srcCompat="@drawable/account" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
