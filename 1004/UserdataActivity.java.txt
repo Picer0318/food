@@ -1,0 +1,77 @@
+package com.example.myapplication;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+
+public class UserdataActivity extends AppCompatActivity {
+    private EditText edt_name,edt_phoneNum;
+    private RadioButton radioButton_man, radioButton_woman;
+    private Button btn_save;
+    String phoneNum,userGender;
+    Boolean editable;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_userdata);
+
+
+        edt_name = findViewById(R.id.edt_name);
+        edt_phoneNum = findViewById(R.id.edt_phoneNum);
+        radioButton_man = findViewById(R.id.radioButton_man);
+        radioButton_woman = findViewById(R.id.radioButton_woman);
+        btn_save = findViewById(R.id.btn_save);
+
+        //取得手機號碼--------------------------------------------------------------
+        SharedPreferences phoneNumSp = getSharedPreferences("uid",MODE_PRIVATE);
+        phoneNum = phoneNumSp.getString("PREF_USERID","");
+        //資料自動填入----------------------------------------------------------
+        edt_phoneNum.setText(phoneNum);
+        //取得editable----------------------------------------------------------------
+        Intent intent = this.getIntent();
+         editable = intent.getBooleanExtra("editable",true);
+        //如果是從account點過來的設定不可更改資料-----------------------------------
+        if(!editable){
+            edt_name.setFocusable(false);
+            radioButton_man.setClickable(false);
+            radioButton_woman.setClickable(false);
+            btn_save.setText("離開");
+        }else {
+            edt_name.setFocusable(true);
+            radioButton_man.setClickable(true);
+            radioButton_woman.setClickable(true);
+        }
+        //------------------------------------------------------------------------------------------
+        //保存資料----------------------------------------------------------------------------------
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //判斷性別-------------------------------------------------------------------------
+                if(radioButton_man.isChecked()){
+                    userGender = "man";
+                }else{
+                    userGender = "woman";
+                }
+                //測試
+                //btn_save.setText(userGender);
+                if(editable) {
+                    //跳至main-------------------------------------------------------------------
+                    Intent toMain = new Intent(UserdataActivity.this, MainActivity.class);
+                    startActivity(toMain);
+                }else{
+                    //跳至account-----------------------------------------------------------------
+                    Intent toAccount = new Intent(UserdataActivity.this, AccountActivity.class);
+                    startActivity(toAccount);
+                }
+            }
+        });
+
+    }
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/systemNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tV_systemNotice"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/customerServiceNotice"
+        />
+
+
+    <TextView
+        android:id="@+id/customerServiceNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/tV_customerServiceNotice"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@id/systemNotice"
+        app:layout_constraintTop_toBottomOf="@id/systemNotice"
+        app:layout_constraintBottom_toTopOf="@id/messageNotice"/>
+
+
+    <TextView
+        android:id="@+id/messageNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/tV_messageNotice"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@id/customerServiceNotice"
+        app:layout_constraintTop_toBottomOf="@id/customerServiceNotice" />
+
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btnshape_rectangle"
+        android:drawableStart="@drawable/save"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/group_system"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/systemNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/systemNotice" >
+        <RadioButton
+            android:id="@+id/systemNotice_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/on"
+            app:layout_constraintEnd_toStartOf="@id/systemNotice_off"/>
+
+        <RadioButton
+            android:id="@+id/systemNotice_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            app:layout_constraintEnd_toEndOf="@id/group_system" />
+    </RadioGroup>
+
+
+
+    <RadioGroup
+        android:id="@+id/group_customerNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/customerServiceNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/customerServiceNotice">
+
+        <RadioButton
+            android:id="@+id/customerNotice_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/on"
+            app:layout_constraintEnd_toStartOf="@id/customerNotice_off" />
+
+        <RadioButton
+            android:id="@+id/customerNotice_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            app:layout_constraintEnd_toEndOf="@id/group_customerNotice" />
+    </RadioGroup>
+
+
+
+    <RadioGroup
+        android:id="@+id/group_messageNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/messageNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messageNotice">
+
+        <RadioButton
+            android:id="@+id/messageNotice_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/on"
+            app:layout_constraintEnd_toStartOf="@id/messageNotice_off" />
+
+        <RadioButton
+            android:id="@+id/messageNotice_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            app:layout_constraintEnd_toEndOf="@id/group_messageNotice" />
+    </RadioGroup>
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
