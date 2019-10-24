@@ -1,0 +1,6 @@
+    <string name="name">姓名</string>
+    <string name="phone">手機</string>
+    <string name="sex">性別</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="save">保存</string>
