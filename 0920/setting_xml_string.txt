@@ -1,0 +1,6 @@
+<string name="on">啟用</string>
+<string name="off">關閉</string>
+<string name="btn_save">保存</string>
+<string name="tV_systemNotice">系統通知</string>
+<string name="tV_customerServiceNotice">客服消息通知</string>
+<string name="tV_messageNotice">聊天訊息通知</string>
