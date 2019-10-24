@@ -1,0 +1,11 @@
+*最下面直接取代掉
+
+//-------------------------------------------------------------------------------------------------------------------------
+        mMap = googleMap;
+        LatLng destination = new LatLng(latitude, longitude);
+
+
+        mMap.addMarker(new MarkerOptions().position(destination).title(address));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(destination));
+        mMap.getUiSettings().setZoomControlsEnabled(true);//放大縮小
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(16));//地圖16倍大

@@ -1,0 +1,2 @@
+        //設定phone最大輸入長度----------------------------------------------------------
+        phone.setFilters(new InputFilter[]{new InputFilter.LengthFilter(10)});
